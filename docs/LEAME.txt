@@ -1,6 +1,17 @@
-<<<<<<< HEAD
-probando el acceso 
-=======
+Solucion de conflicto
+---------------------------------------
+Hicimos la realizacion de un conflicto de un par de lineas de codigo, que,
+al realizar el merge desde la rama1 a la rama master, por uno de los 
+colaboradores y realizar el push a github, y luego que el segundo colaborador
+tambien realizo el merge desde la rama2 a la rama master, y realizar el 
+push se genero un conflito:
 
-Falta la el archivo de entrada y la suma
->>>>>>> ef43e4632ec35abdc83cba28fd73491c50d43dd0
+$ git merge fabio
+Auto-merging src/main.rb
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+Merge made by the 'recursive' strategy.
+src/main.rb | 6 +++---
+1 file changed, 3 insertions(+), 3 deletions(-)
+
+finalmente los dos colaboradores nos pusimos de acuerdo para que solo uno editara al final y a su vez subiera los cambios en el ultimo commit.
+
