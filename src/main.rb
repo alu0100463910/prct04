@@ -1,22 +1,5 @@
 #!/usr/bin/ruby
 
-<<<<<<< HEAD
-#require 'matrix'
-#
-#def mapmap(x)
-#  x.map { |xr| xr.map { |y| yield y}}
-#end
-#  
-#
-#def to_m(a)
-#  a = a.split(/\n/)
-#  a = a.map { |r| r.split(/\s+/)}
-#  a = mapmap(a) {|x| x.to_f}
-#end
-#
-#
-#!/usr/bin/ruby
-
 require 'matrix'
 
 def mapmap(x)
