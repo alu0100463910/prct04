@@ -1,11 +1,2 @@
 
-for(i=0;i<N;i++)
-for(j=0;j<L;j++)
-{
-mul[i][j]=0;
-for(k=0;k<M;k++)
-{
-
-mul[i][j]=(mul[i][j] +(mat1[i][k]*mat2[k][j]));
-
-}
+Falta la el archivo de entrada y la suma
