@@ -46,7 +46,7 @@ for i in 0...a.size do
 end
 
 #Mostrar Multiplicacion
-puts "\n"
+puts 
 puts "Multipliacion de Matrices"
 s.each do |x|
   puts x.join(" ")
@@ -56,12 +56,12 @@ end
 s[i][j]=0;
 for i in 0...a.size do
   for j in 0...b.size do
-    s[i][j] += a[i][j] * b[i][j]
+    s[i][j] = a[i][j] + b[i][j]
   end
 end
 
 #Mostrar Suma
-puts "\n"
+puts 
 puts "Suma de Matrices"
 s.each do |x|
   puts x.join(" ")
