@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 probando el acceso 
+=======
+
+Falta la el archivo de entrada y la suma
+>>>>>>> ef43e4632ec35abdc83cba28fd73491c50d43dd0
