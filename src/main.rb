@@ -13,10 +13,20 @@ def to_m(a)
   a = mapmap(a) {|x| x.to_f}
 end
 
-fichero = File.open('cadena')
-texto = fichero.read
 
-a,b = texto.split(/\n\n*/)         
+
+#Programa principal
+
+ unless ARGV.size == 1
+   STDERR.puts "Falta un argumento: Nombre del fichero."
+   exit(-1)
+ end
+
+
+
+fichero = File.open(ARGV[1])
+texto = fichero.read
+a,b = texto.split(/\n\n+/)         
 
 a = to_m(a)
 b = to_m(b)
@@ -31,6 +41,8 @@ for i in (0...a.size)
     end
   end
 end
+
+
       
 
 
