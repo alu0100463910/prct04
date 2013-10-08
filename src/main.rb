@@ -15,8 +15,8 @@
 #end
 #
 #
-#
-=======
+#!/usr/bin/ruby
+
 require 'matrix'
 
 def mapmap(x)
@@ -32,31 +32,22 @@ end
 
 
 
->>>>>>> 685f448ea8ed27968f7dc543d88841dc3af78eb3
 #Programa principal
-#
-# unless ARGV.size == 1
-#   STDERR.puts "Falta un argumento: Nombre del fichero."
-#   exit(-1)
-# end
-#
-#
-#fichero = File.open(ARGV[0])
-#texto = fichero.read
-#a,b = texto.split(/\n\n+/)         
 
-a = [[3, 0, 2], [5, 1, 6], [4, 3, 1]]#to_m(a)
-b = [[1, 4, 2], [4, 3, 3], [1, 3, 6]]#to_m(b)
-s = Array.new(b.size) { Array.new(a.size) }
+ unless ARGV.size == 1
+   STDERR.puts "Falta un argumento: Nombre del fichero."
+   exit(-1)
+ end
 
 
-<<<<<<< HEAD
-=======
+fichero = File.open(ARGV[0])
+texto = fichero.read
+a,b = texto.split(/\n\n+/)         
+
 a = to_m(a)
 b = to_m(b)
 
 s = Array.new(b.size) { Array.new(a.size) }
->>>>>>> 685f448ea8ed27968f7dc543d88841dc3af78eb3
 
 
 
@@ -85,8 +76,6 @@ for i in 0...a.size do
     s[i][j] += a[i][j] * b[i][j]
   end
 end
-<<<<<<< HEAD
-=======
 
 #Mostrar Suma
 puts "\n"
@@ -94,15 +83,3 @@ puts "Suma de Matrices"
 s.each do |x|
   puts x.join(" ")
 end
->>>>>>> 685f448ea8ed27968f7dc543d88841dc3af78eb3
-
-#Mostrar Suma
-puts "\n"
-puts "Suma de Matrices"
-s.each do |x|
-  puts x.join(" ")
-end
-      
-
-
-
